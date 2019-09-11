@@ -1,0 +1,21 @@
+{
+    "products": [{
+            "id": 1,
+            "productName": "soda",
+            "price": 3.5,
+            "description": "Drink with some sugar"
+        },
+        {
+            "id": 2,
+            "productName": "coockies",
+            "price": 1.0,
+            "description": "Something to eat while you walk"
+        },
+        {
+            "id": 3,
+            "productName": "sport shoes",
+            "price": 100,
+            "description": "you will fly in the field"
+        }
+    ]
+}

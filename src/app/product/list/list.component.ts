@@ -7,7 +7,7 @@ import { ProductService } from '../services/product.service';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
-  product$ = this.productService.getProducts();
+  products$ = this.productService.getProducts();
   isCardList: boolean;
   constructor(private productService: ProductService) {}
 

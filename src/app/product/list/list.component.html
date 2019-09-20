@@ -16,10 +16,10 @@
   </div>
   <div class="mt-3">
     <div *ngIf="isCardList">
-      <app-card></app-card>
+      <app-card *ngFor="let product of products$ | async" [product]="product"></app-card>
     </div>
     <div *ngIf="!isCardList">
-      <app-table></app-table>
+      <app-table [products]="products$"></app-table>
     </div>
   </div>
 </div>

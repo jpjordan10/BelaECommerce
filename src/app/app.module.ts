@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { ProductModule } from './product/product.module';
+import { OrderModule } from './order/order.module';
 
 @NgModule({
   declarations: [AppComponent, MainLayoutComponent],
-  imports: [BrowserModule, AppRoutingModule, CoreModule, ProductModule],
+  imports: [BrowserModule, AppRoutingModule, CoreModule, ProductModule, OrderModule],
   providers: [],
   bootstrap: [AppComponent]
 })

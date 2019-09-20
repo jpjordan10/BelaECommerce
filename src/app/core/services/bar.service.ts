@@ -6,6 +6,10 @@ export class BarService {
   constructor() {}
 
   options() {
-    return of([{ title: 'Products', route: '/product/list' }, { title: 'Kart', route: '/kart' }]);
+    return of([
+      { title: 'Products', route: '/product/list' },
+      { title: 'Kart', route: '/order/kart' },
+      { title: 'History', route: '/order/history' }
+    ]);
   }
 }

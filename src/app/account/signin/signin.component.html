@@ -1,0 +1,25 @@
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100 p-t-50 p-b-90">
+            <form (ngSubmit)="login(fo)" #fo="ngForm" class="login100-form validate-form flex-sb flex-w">
+
+                <span *ngIf="fo.submitted && fo.controls['email'].errors" class="text-danger animated fadeIn">Email no valido</span>
+                <div class="wrap-input100 m-b-20">
+                    <input type="text" class="input100" name="email" [(ngModel)]="usuario.email" required email placeholder="Correo Electrónico">
+                </div>
+
+                <span *ngIf="fo.submitted && fo.controls['password'].errors" class="text-danger animated fadeIn">Password Errada</span>
+                <div class="wrap-input100 m-b-20" data-validate="Password es requerido">
+                    <input type="password" name="password" class="input100" [(ngModel)]="usuario.password" required placeholder="Contraseña">
+                    <span class="input100"></span>
+                </div>
+
+                <div class="container-login100-form-btn m-t-17">
+                    <button class="login100-form-btn" type="submit">
+                    Sign In
+                  </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

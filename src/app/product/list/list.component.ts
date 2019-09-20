@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-list',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.scss']
 })
 export class ListComponent implements OnInit {
+  products$ = this.productService.getProducts();
+  isCardList: boolean;
+  constructor(private productService: ProductService) {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  activateListView(mode) {
+    this.isCardList = mode;
   }
-
 }

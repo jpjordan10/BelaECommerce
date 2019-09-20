@@ -1,1 +1,25 @@
-<h1>MAy</h1>
+<div class="container  mt-4 ml-1">
+  <div class="row">
+    <div>
+      <div class="col-12">
+        <h3>Products</h3>
+      </div>
+      <div class="col-12">
+        <button type="button" class="btn btn-light mr-4" (click)="activateListView(true)">
+          <em class="fa fa-grip-horizontal"></em>
+        </button>
+        <button type="button" class="btn btn-light" (click)="activateListView(false)">
+          <em class="fa fa-list"></em>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mt-3">
+    <div *ngIf="isCardList">
+      <app-card *ngFor="let product of products$ | async" [product]="product"></app-card>
+    </div>
+    <div *ngIf="!isCardList">
+      <app-table [products]="products$"></app-table>
+    </div>
+  </div>
+</div>

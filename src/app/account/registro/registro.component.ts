@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-registro',
   templateUrl: './registro.component.html',
-  styleUrls: ['./registro.component.scss']
+  styleUrls: ['./registro.component.scss', '../signin/signin.component.scss']
 })
 export class RegistroComponent implements OnInit {
 

@@ -3,7 +3,7 @@
     <div class="list-group list-group-flush">
         <a *ngFor="let item of navItems$ | async" [routerLink]="[item.route]" class="list-group-item list-group-item-action bg-light">{{ item.title }}</a
     ></div>
-    <div class="list-group list-group-flush logout_sidebar_button">
-      <button class="btn btn-outline-danger" (click)=" signout()">Sign Out</button>
+    <div class="list-group logout_sidebar_button">
+      <button class="btn btn-outline-danger " (click)=" signout()">Sign Out</button>
     </div>
 </div>

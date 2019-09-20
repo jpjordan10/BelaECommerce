@@ -22,14 +22,14 @@ export class SigninComponent implements OnInit {
   }
 
   login( form: NgForm) {
-    // if ( form.invalid ) { return; }
+    if ( form.invalid ) { return; }
 
-    // this.auth.login( this.usuario )
-    // .subscribe( resp => {
-    //   //this.router.navigateByUrl('/product');
-    //   console.log(resp);
-    // }, (err) => {
-    //   console.log(err.error.error.message);
-    // });
+    this.auth.login( this.usuario )
+    .subscribe( resp => {
+      this.router.navigateByUrl('/product/list');
+      console.log(resp);
+    }, (err) => {
+      console.log(err.error.error.message);
+    });
   }
 }

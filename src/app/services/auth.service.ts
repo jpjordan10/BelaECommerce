@@ -15,12 +15,6 @@ export class AuthService {
 
   userToken: string;
 
-  // Sign Up
-  // https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]
-
-  // sign in
-  // https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=[API_KEY]
-
   constructor( private http: HttpClient) { }
 
   logout() {

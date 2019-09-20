@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { AccountRoutingModule } from './account-routing.module';
 import { SigninComponent } from './signin/signin.component';
+import { RegistroComponent } from './registro/registro.component';
 
 
 @NgModule({
-  declarations: [SigninComponent],
+  declarations: [SigninComponent, RegistroComponent],
   imports: [
     CommonModule,
     AccountRoutingModule,
